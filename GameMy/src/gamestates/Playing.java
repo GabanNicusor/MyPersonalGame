@@ -34,7 +34,7 @@ public class Playing extends States implements gameStatesMethods {
     @Override
     public void Draw(Graphics g) {
         levelManager.draw(g);
-        //drawTepi(null);
+        drawTepi(g);
         player.render(g);
     }
 
