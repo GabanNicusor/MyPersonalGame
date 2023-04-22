@@ -33,9 +33,9 @@ public class Playing extends States implements gameStatesMethods {
 
     @Override
     public void Draw(Graphics g) {
-        levelManager.draw(null);
+        levelManager.draw(g);
         //drawTepi(null);
-        player.render(null);
+        player.render(g);
     }
 
     @Override
@@ -52,6 +52,7 @@ public class Playing extends States implements gameStatesMethods {
                 break;
                 case KeyEvent.VK_BACK_SPACE:
                 Gamestates.states = Gamestates.MENU;
+			initClasses();
                 break;
         }
     }
